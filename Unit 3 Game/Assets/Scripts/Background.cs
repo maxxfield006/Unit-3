@@ -5,6 +5,7 @@ using UnityEngine;
 public class Background : MonoBehaviour
 {
     int speed = 10;
+    private PlayerController player;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +15,15 @@ public class Background : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * Time.deltaTime * speed);
+        //using this playerController thing we can use variables from the player controller in other scripts
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
+
+
+        if (player.gameOver == false)
+        {
+            transform.Translate(Vector3.left * Time.deltaTime * speed);
+        }
+
         resetPos();
     }
 

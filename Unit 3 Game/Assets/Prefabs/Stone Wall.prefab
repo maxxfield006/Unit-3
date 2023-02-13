@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &815723814611015772
+--- !u!1 &1935041864058709946
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 818511521799978724}
-  - component: {fileID: 802206410572730434}
-  - component: {fileID: 794828654197411484}
-  - component: {fileID: 2607732718469938645}
-  - component: {fileID: 3821621841654055550}
-  - component: {fileID: 218114753966328684}
+  - component: {fileID: 1932280380921863682}
+  - component: {fileID: 1921154942239598226}
+  - component: {fileID: 1912550552610655630}
   m_Layer: 0
-  m_Name: Rock
-  m_TagString: Obstacle
+  m_Name: Prop_StoneWall_01
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &818511521799978724
+--- !u!4 &1932280380921863682
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815723814611015772}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.68, y: 0.72, z: 1.5}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_GameObject: {fileID: 1935041864058709946}
+  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 2.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 3829764803559394800}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &802206410572730434
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!33 &1921154942239598226
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815723814611015772}
-  m_Mesh: {fileID: 4300000, guid: 3bf1797a1e906ed419074e5bd4b7ff3b, type: 3}
---- !u!23 &794828654197411484
+  m_GameObject: {fileID: 1935041864058709946}
+  m_Mesh: {fileID: 4300000, guid: 83566b3fe600f364daa9d18fd667ea7f, type: 3}
+--- !u!23 &1912550552610655630
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815723814611015772}
+  m_GameObject: {fileID: 1935041864058709946}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -82,45 +79,61 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2607732718469938645
-BoxCollider:
+--- !u!1 &9178470217192769525
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815723814611015772}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.6651042, y: 2.6651042, z: 2.6651042}
-  m_Center: {x: 0, y: -0.00000005960464, z: 0}
---- !u!114 &3821621841654055550
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3829764803559394800}
+  - component: {fileID: 1959768792483271080}
+  - component: {fileID: 2886049149856618530}
+  m_Layer: 0
+  m_Name: Stone Wall
+  m_TagString: Obstacle
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3829764803559394800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9178470217192769525}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 23.98, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1.5}
+  m_Children:
+  - {fileID: 1932280380921863682}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1959768792483271080
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815723814611015772}
+  m_GameObject: {fileID: 9178470217192769525}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66da7deee1465ea4f822e2df8d7ddb76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obsticleSpeed: 10
---- !u!54 &218114753966328684
-Rigidbody:
+--- !u!65 &2886049149856618530
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 815723814611015772}
+  m_GameObject: {fileID: 9178470217192769525}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Size: {x: 0.39557838, y: 1.4311428, z: 5.4443493}
+  m_Center: {x: 0.020942688, y: 0.2155714, z: 0.22138564}

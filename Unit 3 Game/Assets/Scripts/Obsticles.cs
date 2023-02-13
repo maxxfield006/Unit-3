@@ -4,19 +4,25 @@ using UnityEngine;
 
 public class Obsticles : MonoBehaviour
 {
-    public float obsticleSpeed;
+    float obsticleSpeed ;
+
+    private PlayerController player;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
+        obsticleSpeed = Random.Range(10, 20);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * Time.deltaTime * obsticleSpeed);
-
+        if (player.gameOver == false)
+        {
+            transform.Translate(Vector3.left * Time.deltaTime * obsticleSpeed);
+        }
+        
         if (gameObject.transform.position.x < -5)
         {
             Destroy(gameObject);
